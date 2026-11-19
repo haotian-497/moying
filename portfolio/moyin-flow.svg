@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1780" height="420" viewBox="0 0 1780 420"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#525252"/></marker></defs>
+<rect width="1780" height="420" fill="#FAFAFA"/>
+<text x="40" y="28" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="18" font-weight="700" fill="#171717">墨引 · 执行流程图</text>
+<line x1="150" y1="194" x2="200" y2="194" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="265" y1="155" x2="265" y2="88" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="250" y="120" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="11" fill="#737373">否</text>
+<path d="M200 64 L160 64 L160 194 L200 194" fill="none" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="330" y1="194" x2="380" y2="194" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="350" y="145" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="11" fill="#737373">是</text>
+<line x1="440" y1="155" x2="610" y2="88" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="440" y="120" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="11" fill="#737373">热点</text>
+<line x1="680" y1="64" x2="720" y2="64" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M780 88 L780 140 L600 140 L600 170" fill="none" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="500" y1="194" x2="540" y2="194" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="490" y="160" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="11" fill="#737373">手输</text>
+<line x1="660" y1="194" x2="700" y2="194" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="820" y1="194" x2="860" y2="194" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="980" y1="194" x2="1020" y2="194" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="1130" y1="194" x2="1170" y2="194" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="1280" y1="194" x2="1320" y2="194" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="1430" y1="194" x2="1470" y2="194" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="1525" y1="155" x2="1530" y2="88" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1525" y="120" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="11" fill="#737373">多平台</text>
+<line x1="1525" y1="233" x2="1530" y2="300" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1525" y="280" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="11" fill="#737373">口播</text>
+<path d="M1590 64 L1610 64 L1610 194 L1630 194" fill="none" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M1590 324 L1610 324 L1610 194" fill="none" stroke="#525252" stroke-width="1.5"/>
+<line x1="1580" y1="194" x2="1630" y2="194" stroke="#525252" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="1585" y="158" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="11" fill="#737373">复制</text>
+<rect x="40" y="170" width="110" height="48" rx="24" fill="#fff" stroke="#171717" stroke-width="2"/>
+  <text x="95" y="194" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">开始创作</text>
+<polygon points="265,155 330,194 265,233 200,194" fill="#fff" stroke="#171717" stroke-width="2"/>
+    <text x="265" y="194" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">人设账号齐全?</text>
+<rect x="200" y="40" width="130" height="48" rx="8" fill="#fff" stroke="#171717" stroke-width="2"/>
+  <text x="265" y="64" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">补全人设账号</text>
+<polygon points="440,155 500,194 440,233 380,194" fill="#fff" stroke="#171717" stroke-width="2"/>
+    <text x="440" y="194" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">选题来源</text>
+<rect x="540" y="40" width="140" height="48" rx="8" fill="#fff" stroke="#171717" stroke-width="2"/>
+  <text x="610" y="64" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">抓取并筛选热点</text>
+<rect x="720" y="40" width="120" height="48" rx="8" fill="#fff" stroke="#171717" stroke-width="2"/>
+  <text x="780" y="64" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">选用可蹭点</text>
+<rect x="540" y="170" width="120" height="48" rx="8" fill="#fff" stroke="#171717" stroke-width="2"/>
+  <text x="600" y="194" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">选题材</text>
+<rect x="700" y="170" width="120" height="48" rx="8" fill="#fff" stroke="#171717" stroke-width="2"/>
+  <text x="760" y="194" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">生成三方向</text>
+<rect x="860" y="170" width="120" height="48" rx="8" fill="#fff" stroke="#171717" stroke-width="2"/>
+  <text x="920" y="194" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">选定方向</text>
+<rect x="1020" y="170" width="110" height="48" rx="8" fill="#fff" stroke="#171717" stroke-width="2"/>
+  <text x="1075" y="194" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">流式成稿</text>
+<rect x="1170" y="170" width="110" height="48" rx="8" fill="#fff" stroke="#171717" stroke-width="2"/>
+  <text x="1225" y="194" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">终审校对</text>
+<rect x="1320" y="170" width="110" height="48" rx="8" fill="#fff" stroke="#171717" stroke-width="2"/>
+  <text x="1375" y="194" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">编辑改写</text>
+<polygon points="1525,155 1580,194 1525,233 1470,194" fill="#fff" stroke="#171717" stroke-width="2"/>
+    <text x="1525" y="194" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">发布准备</text>
+<rect x="1470" y="40" width="120" height="48" rx="8" fill="#fff" stroke="#171717" stroke-width="2"/>
+  <text x="1530" y="64" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">多平台版本</text>
+<rect x="1470" y="300" width="120" height="48" rx="8" fill="#fff" stroke="#171717" stroke-width="2"/>
+  <text x="1530" y="324" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">口播提示</text>
+<rect x="1630" y="170" width="110" height="48" rx="24" fill="#fff" stroke="#171717" stroke-width="2"/>
+  <text x="1685" y="194" text-anchor="middle" dominant-baseline="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13" fill="#171717">人工发布</text></svg>

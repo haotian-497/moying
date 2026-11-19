@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<style>
+  html,body{margin:0;padding:0;background:#f5f0e4;}
+  svg{display:block;font-family:"Microsoft YaHei","PingFang SC",sans-serif;}
+</style>
+</head>
+<body>
+<svg width="1900" height="600" viewBox="0 0 1900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f2e7"/>
+      <stop offset="1" stop-color="#f1ebdc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#3a332a" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8a8175"/>
+    </marker>
+  </defs>
+
+  <rect width="1900" height="600" fill="url(#paper)"/>
+
+  <!-- Title -->
+  <text x="46" y="52" font-size="30" font-weight="700" fill="#2a2723" font-family="KaiTi,STKaiti,serif">墨影 · 执行流程图</text>
+  <rect x="330" y="30" width="34" height="34" rx="4" fill="#b5443a"/>
+  <text x="347" y="54" font-size="20" fill="#f7f2e7" text-anchor="middle" font-family="KaiTi,STKaiti,serif">影</text>
+
+  <!-- ===== edges (drawn under nodes) ===== -->
+  <g stroke="#8a8175" stroke-width="1.6" fill="none">
+    <!-- start -> diamond1 -->
+    <line x1="140" y1="300" x2="192" y2="300" marker-end="url(#arrow)"/>
+    <!-- 否 loop: diamond1 top -> box bottom -->
+    <line x1="260" y1="258" x2="260" y2="137"/>
+    <!-- return loop: box left -> down -> back to incoming line -->
+    <path d="M185,110 L150,110 L150,300 L190,300" marker-end="url(#arrow)"/>
+    <!-- diamond1 是 -> diamond2 -->
+    <line x1="330" y1="300" x2="378" y2="300" marker-end="url(#arrow)"/>
+    <!-- 热点: diamond2 top -> up -> right -> up into 抓取 -->
+    <path d="M450,258 L450,180 L600,180 L600,137"/>
+    <!-- 抓取 -> 选用 -->
+    <line x1="675" y1="110" x2="715" y2="110" marker-end="url(#arrow)"/>
+    <!-- 选用 -> down -> left -> down into 选题材 top -->
+    <path d="M780,137 L780,220 L630,220 L630,272" marker-end="url(#arrow)"/>
+    <!-- 手输: diamond2 -> 选题材 -->
+    <line x1="520" y1="300" x2="563" y2="300" marker-end="url(#arrow)"/>
+    <!-- main pipeline -->
+    <line x1="695" y1="300" x2="728" y2="300" marker-end="url(#arrow)"/>
+    <line x1="862" y1="300" x2="888" y2="300" marker-end="url(#arrow)"/>
+    <line x1="1012" y1="300" x2="1042" y2="300" marker-end="url(#arrow)"/>
+    <line x1="1168" y1="300" x2="1197" y2="300" marker-end="url(#arrow)"/>
+    <line x1="1323" y1="300" x2="1352" y2="300" marker-end="url(#arrow)"/>
+    <line x1="1478" y1="300" x2="1513" y2="300" marker-end="url(#arrow)"/>
+    <!-- 发布准备 多平台 up -->
+    <line x1="1585" y1="258" x2="1585" y2="137"/>
+    <!-- 多平台版本 -> right -> down into end -->
+    <path d="M1655,110 L1748,110 L1748,288" marker-end="url(#arrow)"/>
+    <!-- 口播 down -->
+    <line x1="1585" y1="342" x2="1585" y2="463"/>
+    <!-- 口播 -> right -> up into end -->
+    <path d="M1650,490 L1748,490 L1748,312" marker-end="url(#arrow)"/>
+    <!-- 复制 -> end -->
+    <line x1="1657" y1="300" x2="1748" y2="300" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- branch labels -->
+  <g font-size="15" fill="#6d6558">
+    <text x="268" y="200">否</text>
+    <text x="345" y="288">是</text>
+    <text x="458" y="225">热点</text>
+    <text x="535" y="288">手输</text>
+    <text x="1593" y="200">多平台</text>
+    <text x="1593" y="405">口播</text>
+    <text x="1695" y="288">复制</text>
+  </g>
+
+  <!-- ===== nodes ===== -->
+  <!-- start pill -->
+  <g filter="url(#shadow)">
+    <rect x="20" y="275" width="120" height="50" rx="25" fill="#b5443a"/>
+  </g>
+  <text x="80" y="306" font-size="17" fill="#f7f2e7" text-anchor="middle" font-weight="600">开始创作</text>
+
+  <!-- diamond1 人设账号齐全? -->
+  <g filter="url(#shadow)">
+    <polygon points="260,258 330,300 260,342 190,300" fill="#eef1f4" stroke="#4a5a6e" stroke-width="1.6"/>
+  </g>
+  <text x="260" y="296" font-size="15" fill="#2a2723" text-anchor="middle">人设账号</text>
+  <text x="260" y="316" font-size="15" fill="#2a2723" text-anchor="middle">齐全？</text>
+
+  <!-- 补全人设账号 -->
+  <g filter="url(#shadow)">
+    <rect x="185" y="83" width="150" height="54" rx="10" fill="#eef1f4" stroke="#4a5a6e" stroke-width="1.6"/>
+  </g>
+  <text x="260" y="116" font-size="16" fill="#2a2723" text-anchor="middle">补全人设账号</text>
+
+  <!-- diamond2 选题来源 -->
+  <g filter="url(#shadow)">
+    <polygon points="450,258 520,300 450,342 380,300" fill="#f6ede1" stroke="#9a6b3f" stroke-width="1.6"/>
+  </g>
+  <text x="450" y="306" font-size="15" fill="#2a2723" text-anchor="middle">选题来源</text>
+
+  <!-- 抓取并筛选热点 -->
+  <g filter="url(#shadow)">
+    <rect x="525" y="83" width="150" height="54" rx="10" fill="#f6ede1" stroke="#9a6b3f" stroke-width="1.6"/>
+  </g>
+  <text x="600" y="116" font-size="16" fill="#2a2723" text-anchor="middle">抓取并筛选热点</text>
+
+  <!-- 选用可蹭点 -->
+  <g filter="url(#shadow)">
+    <rect x="715" y="83" width="130" height="54" rx="10" fill="#f6ede1" stroke="#9a6b3f" stroke-width="1.6"/>
+  </g>
+  <text x="780" y="116" font-size="16" fill="#2a2723" text-anchor="middle">选用可蹭点</text>
+
+  <!-- 选题材 -->
+  <g filter="url(#shadow)">
+    <rect x="565" y="273" width="130" height="54" rx="10" fill="#f6ede1" stroke="#9a6b3f" stroke-width="1.6"/>
+  </g>
+  <text x="630" y="306" font-size="16" fill="#2a2723" text-anchor="middle">选题材</text>
+
+  <!-- 生成三方向 -->
+  <g filter="url(#shadow)">
+    <rect x="730" y="273" width="132" height="54" rx="10" fill="#e9efec" stroke="#3f5e58" stroke-width="1.6"/>
+  </g>
+  <text x="796" y="306" font-size="16" fill="#2a2723" text-anchor="middle">生成三方向</text>
+
+  <!-- 选定方向 -->
+  <g filter="url(#shadow)">
+    <rect x="886" y="273" width="126" height="54" rx="10" fill="#e9efec" stroke="#3f5e58" stroke-width="1.6"/>
+  </g>
+  <text x="949" y="306" font-size="16" fill="#2a2723" text-anchor="middle">选定方向</text>
+
+  <!-- 流式成稿 -->
+  <g filter="url(#shadow)">
+    <rect x="1040" y="273" width="128" height="54" rx="10" fill="#e9efec" stroke="#3f5e58" stroke-width="1.6"/>
+  </g>
+  <text x="1104" y="306" font-size="16" fill="#2a2723" text-anchor="middle">流式成稿</text>
+
+  <!-- 终审校对 -->
+  <g filter="url(#shadow)">
+    <rect x="1195" y="273" width="128" height="54" rx="10" fill="#efeaf1" stroke="#6d5a75" stroke-width="1.6"/>
+  </g>
+  <text x="1259" y="306" font-size="16" fill="#2a2723" text-anchor="middle">终审校对</text>
+
+  <!-- 编辑改写 -->
+  <g filter="url(#shadow)">
+    <rect x="1350" y="273" width="128" height="54" rx="10" fill="#efeaf1" stroke="#6d5a75" stroke-width="1.6"/>
+  </g>
+  <text x="1414" y="306" font-size="16" fill="#2a2723" text-anchor="middle">编辑改写</text>
+
+  <!-- diamond3 发布准备 -->
+  <g filter="url(#shadow)">
+    <polygon points="1585,258 1657,300 1585,342 1513,300" fill="#f6ede1" stroke="#9a6b3f" stroke-width="1.6"/>
+  </g>
+  <text x="1585" y="306" font-size="15" fill="#2a2723" text-anchor="middle">发布准备</text>
+
+  <!-- 多平台版本 -->
+  <g filter="url(#shadow)">
+    <rect x="1515" y="83" width="140" height="54" rx="10" fill="#f6ede1" stroke="#9a6b3f" stroke-width="1.6"/>
+  </g>
+  <text x="1585" y="116" font-size="16" fill="#2a2723" text-anchor="middle">多平台版本</text>
+
+  <!-- 口播提示 -->
+  <g filter="url(#shadow)">
+    <rect x="1520" y="463" width="130" height="54" rx="10" fill="#f6ede1" stroke="#9a6b3f" stroke-width="1.6"/>
+  </g>
+  <text x="1585" y="496" font-size="16" fill="#2a2723" text-anchor="middle">口播提示</text>
+
+  <!-- end pill -->
+  <g filter="url(#shadow)">
+    <rect x="1750" y="275" width="120" height="50" rx="25" fill="#2a2723"/>
+  </g>
+  <text x="1810" y="306" font-size="17" fill="#f7f2e7" text-anchor="middle" font-weight="600">人工发布</text>
+</svg>
+</body>
+</html>
